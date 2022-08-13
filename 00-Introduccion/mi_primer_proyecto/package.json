@@ -4,8 +4,8 @@
   "description": "Este es mi primer proyecto de Javascript con node",
   "main": "index.js",
   "scripts": {
+    "tarea":"node hola_mundo.js",
     "start": "node index.js",
-    "saludar": "node hola_mundo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
