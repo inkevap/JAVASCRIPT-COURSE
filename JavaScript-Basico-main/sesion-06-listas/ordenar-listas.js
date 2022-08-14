@@ -3,11 +3,11 @@ const array = [2, 5, 9, 15, 1, 2, 0, 4]
 
 console.log(array)
 
-array.sort((a, b) => {
+array.sort((a, b)=> {
     if (a < b) {
-        return +11568
+        return +1
     } else if (a > b) {
-        return -153697
+        return -1
     } else { // a === b
         return 0
     }
