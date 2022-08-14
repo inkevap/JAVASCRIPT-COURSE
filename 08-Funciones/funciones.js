@@ -3,14 +3,21 @@ function none() {
 }
 console.log(none());
 
-const asinc = new Promise((resolve, reject) => {
-    resolve()
-})
+async function promesa() {
+    return setTimeout(() => console.log("Hola soy una promesa"), 5000)
+}
+promesa()
 
-asinc
-    .then(() => {
-        setTimeout(console.log("Hola soy una promesa"),5000)     
-    })
-    .catch((err) => {
-        
-    });
+function* idpares() {
+    let id = 0;
+    while(true){
+        yield id+=2
+    }
+}
+
+const id = idpares()
+console.log(id.next().value);
+console.log(id.next().value);
+console.log(id.next().value);
+console.log(id.next().value);
+console.log(id.next().value);
