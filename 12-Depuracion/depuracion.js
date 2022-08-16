@@ -1,15 +1,11 @@
-function Fib(num) {
-    let result = [];
-    let a = 1;
-    let b = 0;
-    for(let i = 0; i < num; i++) {
-        b = Math.pow(b + a,i)
-        result = [...result,b]
-        a = b
-        console.log(result);
-        
+function Fibonacci(num) {
+    if (num === 1) return [1]
+    if (num === 2) return [1, 1]
+    let lista = [1, 1]
+    for (let i = 2; i < num; i++) {
+        lista.push(lista[i - 1] + lista[i - 2])
     }
-    return result
+    return lista
 }
 
-z = Fib(6)
+console.log(Fibonacci(6))
