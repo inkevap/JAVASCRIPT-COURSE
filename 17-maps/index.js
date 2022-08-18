@@ -29,13 +29,13 @@ function initMap() {
     }) 
 
     marker2 = new google.maps.Marker({
-        position: posicion,
+        position: posicion2,
         map,
         title: "lugar intermedio"
     })
 
     marker3 = new google.maps.Marker({
-        position: posicion,
+        position: posicion3,
         map,
         title: "Ultimo lugar"
     })
